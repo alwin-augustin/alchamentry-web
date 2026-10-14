@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="alch-plate-title">
+  <title id="alch-plate-title">Alchamentry</title>
+  <rect width="64" height="64" rx="14" fill="#1A1815"/>
+  <g transform="translate(32 32) scale(0.6) translate(-32 -32)">
+    <path d="M32 5.5 55 44.5 45.6 44.5 32 25.5 18.4 44.5 9 44.5Z" fill="#F5F3EE"/>
+    <rect x="6" y="53" width="52" height="5.5" rx="2.75" fill="#9C4A16"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+# Cloudflare Pages project for alchamentry.com.
+# The project itself is created and its domain attached outside this file; from
+# here on, `wrangler pages deploy` is the only deployment path.
+name = "alchamentry"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-01-01"

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="alch-mark-title">
+  <title id="alch-mark-title">Alchamentry</title>
+  <!-- The form — a chevron, the studio's own mark. -->
+  <path d="M32 5.5 55 44.5 45.6 44.5 32 25.5 18.4 44.5 9 44.5Z" fill="#1A1815"/>
+  <!-- The rule it is set above — the same two-part grammar as Remote Days. -->
+  <rect x="6" y="53" width="52" height="5.5" rx="2.75" fill="#9C4A16"/>
+</svg>

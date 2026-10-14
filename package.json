@@ -1,0 +1,19 @@
+{
+  "name": "alchamentry-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "alchamentry.com — the Alchamentry studio landing page",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "deploy": "node scripts/build.mjs && wrangler pages deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.0"
+  }
+}
