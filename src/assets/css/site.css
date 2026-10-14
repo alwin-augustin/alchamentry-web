@@ -254,9 +254,12 @@ a { color: inherit; text-decoration: none; }
 
 .brand-mark { width: 22px; height: 22px; color: var(--ink); flex: none; }
 
-/* The rule under the chevron takes the surface's accent, so the mark lightens
-   automatically on the dark bands. */
-.brand-mark-rule { fill: var(--accent); }
+/* The mark is the letter A drawn as a still: the flat top is the vessel's
+   mouth, the counter is its interior, the crossbar is the liquid line, and the
+   drop is the distillate. Ink is the apparatus and oxide is the substance,
+   which is why the drop is the only coloured element in the system — and why
+   it takes the surface's accent, so it lifts on its own on the dark bands. */
+.brand-mark-drop { fill: var(--accent); }
 
 .brand-word {
   font-size: 1.0625rem;

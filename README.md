@@ -35,9 +35,11 @@ src/
     css/site.css          one stylesheet, tokens at the top
     js/site.js            ~25 lines; a hairline on the sticky header
     products/             the three product marks
+    alchamentry-mark*.svg the studio mark, generated — see below
   fonts/                  Inter Tight + JetBrains Mono, self-hosted, woff2
 scripts/
   build.mjs               src/ -> dist/, with content hashing
+  mark.mjs                generates the studio mark (the geometry lives here)
   serve.mjs               tiny static server for local check
 ```
 
@@ -114,3 +116,24 @@ npm run deploy     # build, then `wrangler pages deploy` using wrangler.toml
 - **Product facts** are the one thing most likely to go stale. Remote Days'
   thresholds, Dentra's features and Toolbit's tool count come from the products
   themselves — re-check them when a product changes.
+
+### The mark
+
+`scripts/mark.mjs` is the source of truth for the logo's geometry — the numbers at
+the top of that file are the design, and the comments explain why each one is what
+it is. Nothing in the site build runs it.
+
+```sh
+npm run mark     # rewrites src/assets/alchamentry-mark*.svg and src/favicon.svg
+```
+
+After changing the geometry, re-export the raster icons (they are committed, and
+nothing generates them automatically):
+
+- `favicon.ico` (16/32/48), `icon-192.png`, `icon-512.png` — from `src/favicon.svg`
+- `apple-touch-icon.png`, `icon-maskable-512.png` — from `src/assets/alchamentry-plate-bleed.svg`
+- `og.png` — 1200×630, re-render the share card
+
+The mark also appears **inline** in `src/index.html`, twice (header and footer), and
+carries `class="brand-mark-drop"` so the CSS can colour the drop with the surface's
+accent. If you change the geometry, update those paths too.
