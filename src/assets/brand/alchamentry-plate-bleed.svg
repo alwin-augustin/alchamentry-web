@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Alchamentry</title>
+  <rect width="160" height="160" fill="#0B1220"/>
+  <g transform="translate(80 80) scale(0.6595) translate(-78 -85.5)">
+    <defs>
+        <linearGradient id="lineGradient" x1="21" y1="90" x2="135" y2="90" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#315FF5"/><stop offset="0.52" stop-color="#6474F8"/><stop offset="1" stop-color="#9857E8"/>
+        </linearGradient>
+        <linearGradient id="liquidGradient" x1="28" y1="104" x2="116" y2="129" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#3475F7"/>
+          <stop offset="0.34" stop-color="#7659EE"/>
+          <stop offset="0.63" stop-color="#BB60DB"/>
+          <stop offset="0.86" stop-color="#DB63C4"/>
+          <stop offset="1" stop-color="#9257E4"/>
+        </linearGradient>
+        <linearGradient id="liquidWarmGradient" x1="76" y1="94" x2="119" y2="130" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#F96E99"/>
+          <stop offset="0.52" stop-color="#FF914F"/>
+          <stop offset="1" stop-color="#FFD16A"/>
+        </linearGradient>
+        <linearGradient id="waveHighlightGradient" x1="32" y1="105" x2="117" y2="111" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#DCE8FF" stop-opacity="0.98"/>
+          <stop offset="0.55" stop-color="#F8D4FF" stop-opacity="0.98"/>
+          <stop offset="1" stop-color="#FFE9BE" stop-opacity="0.98"/>
+        </linearGradient>
+        <clipPath id="vesselClip" clipPathUnits="userSpaceOnUse">
+          <path d="M63 43 H81 V55 C81 61 84 65 87 69 L119 119 C124 127 120 136 110 136 H34 C24 136 20 127 25 119 L57 69 C60 65 63 61 63 55 Z"/>
+        </clipPath>
+      </defs>
+    <g id="mark" transform="translate(5 10)">
+        <path id="liquid-warm-phase" d="M62 121 C73 116 79 102 90 95 C101 88 112 98 118 109 C121 115 123 122 124 127 L126 141 H60 Z" fill="url(#liquidWarmGradient)" clip-path="url(#vesselClip)"/>
+        <path id="liquid-main-phase" d="M21 114 C32 110 42 94 55 96 C69 98 77 110 89 115 C101 120 112 106 122 106 C124 116 125 125 126 132 L126 141 H21 Z" fill="url(#liquidGradient)" clip-path="url(#vesselClip)"/>
+        <path id="liquid-flow-highlight" d="M25 113 C36 107 44 95 55 96 C69 98 78 111 89 115 C101 119 112 106 121 106" stroke="url(#waveHighlightGradient)" stroke-width="1.55" stroke-linecap="round" fill="none" clip-path="url(#vesselClip)"/>
+        <path id="vessel-outline" d="M63 43 V55 C63 61 60 65 57 69 L25 119 C20 127 24 136 34 136 H110 C120 136 124 127 119 119 L87 69 C84 65 81 61 81 55 V43" stroke="url(#lineGradient)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="vessel-rim" d="M59 42.5 H85" stroke="url(#lineGradient)" stroke-width="3.4" stroke-linecap="round"/>
+        <circle cx="75" cy="29" r="8.3" stroke="#4168F6" stroke-width="3"/><circle cx="94" cy="10" r="3.8" fill="#795FF1"/>
+      </g>
+  </g>
+</svg>

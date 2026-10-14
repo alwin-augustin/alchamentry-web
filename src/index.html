@@ -1,296 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alchamentry — Software for work that has to hold up</title>
-<meta name="description" content="Alchamentry is an independent software studio. Three products in production: Remote Days for cross-border work compliance, Dentra for dental practice management, and Toolbit for local-first developer tooling.">
-<link rel="canonical" href="https://alchamentry.com/">
-<meta name="theme-color" content="#F5F3EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1A1815" media="(prefers-color-scheme: dark)">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F8FAFC">
+  <title>Alchamentry — Software for work that has to hold up</title>
+  <meta name="description" content="Alchamentry is an independent software studio building focused, dependable products for compliance, dental clinics, and developers.">
+  <link rel="canonical" href="https://alchamentry.com/">
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Alchamentry">
-<meta property="og:url" content="https://alchamentry.com/">
-<meta property="og:title" content="Alchamentry — Software for work that has to hold up">
-<meta property="og:description" content="An independent software studio. Three products in production, each built so the record survives an inspection.">
-<meta property="og:image" content="https://alchamentry.com/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alchamentry — Software for work that has to hold up">
-<meta name="twitter:description" content="An independent software studio. Three products in production, each built so the record survives an inspection.">
-<meta name="twitter:image" content="https://alchamentry.com/og.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Alchamentry">
+  <meta property="og:url" content="https://alchamentry.com/">
+  <meta property="og:title" content="Alchamentry — Software for work that has to hold up">
+  <meta property="og:description" content="An independent software studio building focused, dependable products for compliance, dental clinics, and developers.">
+  <meta property="og:image" content="https://alchamentry.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alchamentry — Software for work that has to hold up">
+  <meta name="twitter:description" content="An independent software studio building focused, dependable products for compliance, dental clinics, and developers.">
+  <meta name="twitter:image" content="https://alchamentry.com/og.png">
 
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="preload" href="/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="/fonts/inter-100-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dm-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Alchamentry",
-  "url": "https://alchamentry.com",
-  "email": "hello@alchamentry.com",
-  "description": "Independent software studio. Remote Days, Dentra and Toolbit.",
-  "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Remote Days", "url": "https://remotedays.app", "applicationCategory": "BusinessApplication" } },
-    { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Dentra", "url": "https://dentra.fly.dev", "applicationCategory": "BusinessApplication" } },
-    { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Toolbit", "url": "https://toolbit.app", "applicationCategory": "DeveloperApplication" } }
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Alchamentry",
+    "url": "https://alchamentry.com",
+    "email": "hello@alchamentry.com",
+    "logo": "https://alchamentry.com/icon-512.png",
+    "description": "Independent software studio. Remote Days, Dentra and Toolbit.",
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Remote Days", "url": "https://remotedays.app/", "applicationCategory": "BusinessApplication" } },
+      { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Dentra", "url": "https://dentra.fly.dev/", "applicationCategory": "BusinessApplication" } },
+      { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Toolbit", "url": "https://toolbit.app/", "applicationCategory": "DeveloperApplication" } }
+    ]
+  }
+  </script>
 </head>
-
 <body>
-<a class="skip" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Alchamentry home">
+        <img src="/assets/brand/alchamentry-logo-outlined.svg" alt="Alchamentry Software Lab">
+      </a>
+      <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#approach">Approach</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="#contact">Start a conversation <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </div>
+  </header>
 
-<header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <a class="brand" href="#top" aria-label="Alchamentry, home">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <path d="M25.5 9H38.5L58 55H48.5L32 19L15.5 55H6Z" fill="currentColor"/>
-        <path d="M19.04 44H44.96L47.07 48.6H16.93Z" fill="currentColor"/>
-        <path class="brand-mark-drop" d="M32 25c2.95 3.61 4.1 6.15 4.1 8.2a4.1 4.1 0 0 1-8.2 0c0-2.05 1.15-4.59 4.1-8.2Z"/>
-      </svg>
-      <span class="brand-word">Alchamentry</span>
-    </a>
-
-    <nav class="nav" aria-label="Sections">
-      <a href="#products">Products</a>
-      <a href="#approach">Approach</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <a class="header-mail" href="mailto:hello@alchamentry.com">hello@alchamentry.com</a>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- ── Hero ─────────────────────────────────────────────────────── -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap">
-      <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Independent software studio</p>
-
-      <h1 class="display-xl" id="hero-title">Software for work<br>that has to hold up.</h1>
-
-      <div class="hero-foot">
-        <p class="lede">
-          Three products in production. Each one replaces a manual process that fails
-          quietly — a threshold nobody is counting, a patient history split across
-          notebooks, a secret pasted into someone else&rsquo;s server.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-solid" href="#products">See the products</a>
-          <a class="btn btn-ghost" href="mailto:hello@alchamentry.com">Get in touch</a>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="dot"></span> Independent software studio</div>
+            <h1>Software for work <span class="line">that has to <span class="gradient-text">hold up.</span></span></h1>
+            <p class="lead">We build focused products for the details that cannot slip: a compliance threshold, a patient history, a piece of sensitive developer data.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#products">Explore our products <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a class="btn btn-secondary" href="#approach">How we build <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14m-7-7 7 7 7-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+            <div class="proof-points" aria-label="Studio principles">
+              <span class="proof-point"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5 9.2 17 19 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Focused by design</span>
+              <span class="proof-point"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5c0 4.6-2.9 7.9-7 10-4.1-2.1-7-5.4-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg> Records you can trust</span>
+              <span class="proof-point"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg> Privacy with intent</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Alchamentry flask mark, representing ideas becoming useful software">
+            <div class="art-grid"></div><div class="art-orbit"></div>
+            <img class="hero-flask" src="/assets/brand/alchamentry-icon.svg" alt="" aria-hidden="true">
+            <div class="float-label label-top"><span class="label-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5h16v13H4zM8 9h8M8 12h5M8 15h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Clear by default</b><span>SMALL, PURPOSEFUL TOOLS</span></div></div>
+            <div class="float-label label-bottom"><span class="label-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5c0 4.5-3 7.9-7 10-4-2.1-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Designed to hold up</b><span>DETAILS THAT MATTER</span></div></div>
+            <div class="art-index">IDEAS / EXPERIMENTS / USEFUL SOFTWARE</div>
+          </div>
+        </div>
+        <div class="hero-strip" aria-label="Product areas">
+          <div class="strip-item"><span class="strip-num">01</span><span><strong>COMPLIANCE</strong><br>Remote Days</span></div>
+          <div class="strip-item"><span class="strip-num">02</span><span><strong>HEALTHCARE</strong><br>Dentra</span></div>
+          <div class="strip-item"><span class="strip-num">03</span><span><strong>DEVELOPER TOOLS</strong><br>Toolbit</span></div>
+          <div class="strip-item"><span class="strip-num">↗</span><span><strong>ONE STANDARD</strong><br>Useful, dependable software</span></div>
         </div>
       </div>
+    </section>
 
-      <div class="instrip">
-        <p class="instrip-label">In production</p>
-        <ul class="instrip-list">
-          <li><a href="https://remotedays.app" rel="noopener">
-            <img src="/assets/products/remote-days-tile.svg" alt="" width="22" height="22">
-            <span>Remote&nbsp;Days</span></a></li>
-          <li><a href="https://dentra.fly.dev" rel="noopener">
-            <img src="/assets/products/dentra.png" alt="" width="22" height="22">
-            <span>Dentra</span></a></li>
-          <li><a href="https://toolbit.app" rel="noopener">
-            <img src="/assets/products/toolbit.svg" alt="" width="22" height="22">
-            <span>Toolbit</span></a></li>
-        </ul>
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">01 / Products</div>
+            <h2>Three products.<br>One standard.</h2>
+          </div>
+          <p class="section-intro">Different teams. Different problems. The same belief that software should make important work clearer, safer, and easier to account for.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card remote">
+            <div class="product-top"><span class="product-id">AL / 001</span><span class="live-pill">In production</span></div>
+            <div class="product-visual" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-top"><span></span><span></span><span></span><b>WORK LOG</b></div>
+                <div class="remote-rows"><i class="line"></i><i class="status"></i><i class="line"></i><i class="status"></i><i class="line"></i><i class="status warn"></i><i class="line"></i><i class="status"></i></div>
+              </div>
+            </div>
+            <div class="product-tag">Compliance</div>
+            <h3>Remote Days</h3>
+            <p class="product-subtitle">Cross-border remote work compliance</p>
+            <p class="product-description">Track where each employee works, watch country-specific thresholds, and keep an evidence trail ready when someone needs to review it.</p>
+            <div class="feature-list"><span>Threshold alerts</span><span>Audit trail</span><span>HR visibility</span></div>
+            <a class="product-link" href="https://remotedays.app/" target="_blank" rel="noopener noreferrer">Explore Remote Days <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <article class="product-card dentra">
+            <div class="product-top"><span class="product-id">AL / 002</span><span class="live-pill">In production</span></div>
+            <div class="product-visual" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-top"><span></span><span></span><span></span><b>PATIENT RECORD</b></div>
+                <div class="dent-grid"><div class="dent-avatar"><svg viewBox="0 0 24 24" fill="none"><path d="M7.5 4.5c-2.1 0-3.5 1.7-3.2 4 .3 2.1 1.2 3.1 1.8 5.6.6 2.7 1.4 5.4 3.1 5.4 1.4 0 1.4-3.4 2.8-3.4s1.4 3.4 2.8 3.4c1.7 0 2.5-2.7 3.1-5.4.6-2.5 1.5-3.5 1.8-5.6.3-2.3-1.1-4-3.2-4-1.5 0-2.7 1.1-4.5 1.1S9 4.5 7.5 4.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div><div class="dent-lines"><span></span><span></span><span></span></div></div>
+                <div class="dent-bottom"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="product-tag">Healthcare</div>
+            <h3>Dentra</h3>
+            <p class="product-subtitle">Practice management for dental clinics</p>
+            <p class="product-description">Bring patient history, appointments, treatment plans, prescriptions, and GST-compliant billing into one clear workflow.</p>
+            <div class="feature-list"><span>Patient history</span><span>Appointments</span><span>Billing & reminders</span></div>
+            <a class="product-link" href="https://dentra.fly.dev/" target="_blank" rel="noopener noreferrer">Explore Dentra <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <article class="product-card toolbit">
+            <div class="product-top"><span class="product-id">AL / 003</span><span class="live-pill">In production</span></div>
+            <div class="product-visual" aria-hidden="true">
+              <div class="mock-window code-window">
+                <div class="mock-top"><span></span><span></span><span></span><b>LOCAL / JSON</b></div>
+                <div class="code-lines"><i class="code-line"></i><i class="code-line"></i><i class="code-line"></i><i class="code-line"></i></div>
+              </div>
+            </div>
+            <div class="product-tag">Developer tools</div>
+            <h3>Toolbit</h3>
+            <p class="product-subtitle">A local-first developer toolbox</p>
+            <p class="product-description">A collection of browser-based tools for JSON, JWTs, regex, encoding, conversion, and inspection, with offline support for many tasks.</p>
+            <div class="feature-list"><span>Local-first</span><span>Offline tools</span><span>Open source</span></div>
+            <a class="product-link" href="https://toolbit.app/" target="_blank" rel="noopener noreferrer">Explore Toolbit <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── Products ─────────────────────────────────────────────────── -->
-  <section class="section" id="products" aria-labelledby="products-title">
-    <div class="wrap">
-      <header class="section-head" data-reveal>
-        <p class="section-num"><span>01</span>Products</p>
-        <h2 class="display-l" id="products-title">Three products,<br>one standard.</h2>
-        <p class="lede section-lede">
-          None of them share a market or a codebase. All of them are live, used by real
-          teams, and built so that the record they keep is worth something when somebody
-          finally asks for it.
-        </p>
-      </header>
-
-      <!-- Remote Days -->
-      <article class="product p-remotedays" data-reveal>
-        <div class="product-id">
-          <img class="picon" src="/assets/products/remote-days-tile.svg" alt="Remote Days app icon" width="56" height="56" loading="lazy">
-          <h3 class="display-m"><a href="https://remotedays.app" rel="noopener">Remote Days</a></h3>
-          <p class="product-tag">Cross-border remote work compliance</p>
-          <p class="domain"><a href="https://remotedays.app" rel="noopener">remotedays.app</a></p>
+    <section class="approach-section" id="approach">
+      <div class="container">
+        <div class="approach-grid">
+          <div>
+            <div class="section-kicker">02 / Approach</div>
+            <h2>Good software is a series of things you refuse to get wrong.</h2>
+            <p class="section-intro">The products look different because the work is different. Their behaviour comes from the same four rules.</p>
+          </div>
+          <div class="principles">
+            <article class="principle"><span class="principle-index">01</span><div><h3>Narrow beats broad.</h3><p>Each product does one job for one kind of team. We prefer a focused tool that does its work well to another platform that tries to do everything.</p></div></article>
+            <article class="principle"><span class="principle-index">02</span><div><h3>The record is the product.</h3><p>Exports, audit trails, and correction history are part of the design from the start, not a feature bolted on after the first request.</p></div></article>
+            <article class="principle"><span class="principle-index">03</span><div><h3>Sensitive data stays put.</h3><p>We treat data location and ownership as product decisions. Local processing, clear access boundaries, and usable exports matter.</p></div></article>
+            <article class="principle"><span class="principle-index">04</span><div><h3>Plain over clever.</h3><p>People should understand the screen in front of them without needing a tour. Novelty is a cost; we only spend it when it helps.</p></div></article>
+          </div>
         </div>
-
-        <div class="product-body">
-          <p class="product-desc">
-            Records where each employee actually worked, counts those days against the
-            tax and social-security threshold of the country they live in, and warns
-            before a limit is crossed. Built for employers in Luxembourg whose staff
-            live in France, Belgium or Germany.
-          </p>
-          <dl class="facts">
-            <div><dt>Thresholds</dt><dd>France and Belgium at 34 days a year, Germany at 183 — configurable per country</dd></div>
-            <div><dt>Evidence</dt><dd>An immutable log of who declared what, when, and who changed it afterwards</dd></div>
-            <div><dt>Access</dt><dd>Employee, HR and admin roles, with single sign-on through your directory</dd></div>
-          </dl>
-        </div>
-      </article>
-
-      <!-- Dentra -->
-      <article class="product p-dentra" data-reveal>
-        <div class="product-id">
-          <img class="picon" src="/assets/products/dentra.png" alt="Dentra app icon" width="56" height="56" loading="lazy">
-          <h3 class="display-m"><a href="https://dentra.fly.dev" rel="noopener">Dentra</a></h3>
-          <p class="product-tag">Practice management for dental clinics</p>
-          <p class="domain"><a href="https://dentra.fly.dev" rel="noopener">dentra.fly.dev</a></p>
-        </div>
-
-        <div class="product-body">
-          <p class="product-desc">
-            Patient records, appointments, treatment plans, prescriptions and
-            GST-compliant billing in one place. Built for clinics in India that are
-            still running the day out of a register book, a paper diary and a WhatsApp
-            thread.
-          </p>
-          <dl class="facts">
-            <div><dt>Records</dt><dd>History, allergy flags, X-rays and notes on a single patient profile</dd></div>
-            <div><dt>Billing</dt><dd>CGST/SGST invoices generated during the appointment, not after it</dd></div>
-            <div><dt>Reminders</dt><dd>Appointment and recall messages sent over WhatsApp and SMS automatically</dd></div>
-          </dl>
-        </div>
-      </article>
-
-      <!-- Toolbit -->
-      <article class="product p-toolbit" data-reveal>
-        <div class="product-id">
-          <img class="picon" src="/assets/products/toolbit.svg" alt="Toolbit app icon" width="56" height="56" loading="lazy">
-          <h3 class="display-m"><a href="https://toolbit.app" rel="noopener">Toolbit</a></h3>
-          <p class="product-tag">A local-first developer toolbox</p>
-          <p class="domain"><a href="https://toolbit.app" rel="noopener">toolbit.app</a></p>
-        </div>
-
-        <div class="product-body">
-          <p class="product-desc">
-            Forty-two tools for JSON, JWTs, regex, encoding, conversion and inspection
-            that run entirely inside the browser tab. Nothing is uploaded, so the config
-            file or token you are debugging never leaves your machine.
-          </p>
-          <dl class="facts">
-            <div><dt>No uploads</dt><dd>Input is read from disk and processed in the tab, never transmitted</dd></div>
-            <div><dt>Offline</dt><dd>Installs as an app; cached tools keep working with no connection</dd></div>
-            <div><dt>Licence</dt><dd>MIT and open source. No account, no paid tier, no advertising</dd></div>
-          </dl>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ── Approach ─────────────────────────────────────────────────── -->
-  <section class="section band" id="approach" aria-labelledby="approach-title">
-    <div class="wrap">
-      <header class="section-head" data-reveal>
-        <p class="section-num"><span>02</span>Approach</p>
-        <h2 class="display-l" id="approach-title">How we build.</h2>
-        <p class="lede section-lede">
-          Four rules that apply to all three products. They are why the products look
-          unrelated and still behave the same way.
-        </p>
-      </header>
-
-      <ol class="principles" data-reveal>
-        <li>
-          <span class="pnum" aria-hidden="true">01</span>
-          <h3>Narrow beats broad</h3>
-          <p>Each product does one job for one kind of team. None of them is a platform, and none of them is a general-purpose tool with a mode for your industry.</p>
-        </li>
-        <li>
-          <span class="pnum" aria-hidden="true">02</span>
-          <h3>The record is the product</h3>
-          <p>Exports, audit trails and corrections are designed first, not added when a customer asks. If it cannot be handed to an inspector, it is not finished.</p>
-        </li>
-        <li>
-          <span class="pnum" aria-hidden="true">03</span>
-          <h3>Sensitive data stays put</h3>
-          <p>Toolbit computes in the browser. Remote Days keeps its data in the EU. Dentra&rsquo;s clinics own their patient records and can export the lot whenever they want.</p>
-        </li>
-        <li>
-          <span class="pnum" aria-hidden="true">04</span>
-          <h3>Plain over clever</h3>
-          <p>A receptionist, an HR lead and a developer each have to understand the screen in front of them on first use. Novelty is a cost, and we mostly decline to pay it.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ── Contact ──────────────────────────────────────────────────── -->
-  <section class="section contact" id="contact" aria-labelledby="contact-title">
-    <div class="wrap">
-      <p class="section-num"><span>03</span>Contact</p>
-      <h2 class="display-l" id="contact-title">Get in touch.</h2>
-      <p class="lede contact-lede">
-        Whether you run a clinic, an HR team or a development team — or you just want to
-        know how one of these was put together — write to us. We read everything.
-      </p>
-      <p class="contact-mail">
-        <a href="mailto:hello@alchamentry.com">hello@alchamentry.com</a>
-      </p>
-      <p class="contact-note">
-        For product support, please write from the address on the account, or use the
-        support link inside the product.
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <path d="M25.5 9H38.5L58 55H48.5L32 19L15.5 55H6Z" fill="currentColor"/>
-        <path d="M19.04 44H44.96L47.07 48.6H16.93Z" fill="currentColor"/>
-        <path class="brand-mark-drop" d="M32 25c2.95 3.61 4.1 6.15 4.1 8.2a4.1 4.1 0 0 1-8.2 0c0-2.05 1.15-4.59 4.1-8.2Z"/>
-      </svg>
-      <p class="footer-word">Alchamentry</p>
-      <p class="footer-line">An independent software studio.</p>
-    </div>
-
-    <nav class="footer-cols" aria-label="Products">
-      <div>
-        <p class="footer-head">Products</p>
-        <ul>
-          <li><a href="https://remotedays.app" rel="noopener">Remote Days</a></li>
-          <li><a href="https://dentra.fly.dev" rel="noopener">Dentra</a></li>
-          <li><a href="https://toolbit.app" rel="noopener">Toolbit</a></li>
-        </ul>
+        <div class="approach-bottom"><p><strong>Software lab, not software theatre.</strong> Useful work over impressive demos.</p><a class="btn btn-light" href="#contact">Talk to the studio <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
-      <div>
-        <p class="footer-head">This site</p>
-        <ul>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#approach">Approach</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    </section>
+
+    <section class="studio-section" id="studio">
+      <div class="container studio-grid">
+        <div class="studio-copy">
+          <div class="section-kicker">03 / The studio</div>
+          <h2>Ideas are easy. Making them useful is the work.</h2>
+          <p>Alchamentry is an independent software studio. We explore ideas, test them against real workflows, and turn the useful ones into focused products that people can rely on.</p>
+          <p>Our products do not need to share an audience or a codebase. They do share a standard: clarity, care for the data, and a reason to exist.</p>
+        </div>
+        <aside class="studio-statement">
+          <div class="statement-top"><img src="/assets/brand/alchamentry-icon.svg" alt="" aria-hidden="true"><span>ALCHAMENTRY / SOFTWARE LAB</span></div>
+          <p class="statement-quote">Turning ideas into useful software.</p>
+          <div class="statement-foot"><span>IDEAS</span><span>EXPERIMENTS</span><span>USEFUL SOFTWARE</span></div>
+        </aside>
       </div>
-    </nav>
-  </div>
+    </section>
 
-  <div class="wrap footer-base">
-    <p>&copy; {{YEAR}} Alchamentry. All rights reserved.</p>
-    <p class="footer-build">Built {{BUILD}}</p>
-  </div>
-</footer>
+    <section class="contact-wrap" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <div class="section-kicker">04 / Contact</div>
+            <h2>Have a real problem worth solving?</h2>
+            <p>If you run a clinic, manage a distributed team, build software, or simply want to discuss how one of our products works, start a conversation with the studio.</p>
+          </div>
+          <div class="contact-action"><a class="btn btn-light" href="mailto:hello@alchamentry.com">Contact Alchamentry <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<script src="/assets/js/site.js" defer></script>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <a class="footer-brand" href="#top" aria-label="Alchamentry home">
+          <img src="/assets/brand/alchamentry-icon.svg" alt="" aria-hidden="true">
+          <span><strong>Alchamentry</strong><span>Software Lab</span></span>
+        </a>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="https://remotedays.app/" target="_blank" rel="noopener noreferrer">Remote Days</a>
+          <a href="https://dentra.fly.dev/" target="_blank" rel="noopener noreferrer">Dentra</a>
+          <a href="https://toolbit.app/" target="_blank" rel="noopener noreferrer">Toolbit</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom"><p>© <span id="year">2026</span> Alchamentry. All rights reserved.</p><p>Independent by nature. Deliberate by design.</p></div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

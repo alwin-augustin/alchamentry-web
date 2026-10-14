@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "alchamentry.com — the Alchamentry studio landing page",
+  "description": "alchamentry.com \u2014 the Alchamentry studio landing page",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "mark": "node scripts/mark.mjs",
+    "icons": "node scripts/icons.mjs",
+    "import-showcase": "node scripts/import-showcase.mjs",
     "serve": "node scripts/serve.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "deploy": "node scripts/build.mjs && wrangler pages deploy"

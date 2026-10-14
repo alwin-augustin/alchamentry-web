@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="alchamentry-title">
-  <title id="alchamentry-title">Alchamentry</title>
-  <rect width="64" height="64" rx="14" fill="#1A1815"/>
-  <g transform="translate(32 32) scale(0.56) translate(-32 -32)">
-    <path d="M25.5 9H38.5L58 55H48.5L32 19L15.5 55H6Z" fill="#F5F3EE"/>
-    <path d="M19.04 44H44.96L47.07 48.6H16.93Z" fill="#F5F3EE"/>
-    <path d="M32 25c2.95 3.61 4.1 6.15 4.1 8.2a4.1 4.1 0 0 1-8.2 0c0-2.05 1.15-4.59 4.1-8.2Z" fill="#D98A4E"/>
-  </g>
-</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none">
+  <title>Alchamentry Software Lab logo, outlined vector artwork</title>
+  <desc>All lettering is converted to paths for consistent rendering without installed fonts.</desc>
+  <defs>
+    <linearGradient id="lineGradient" x1="24" y1="95" x2="132" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#315FF5"/>
+      <stop offset="0.52" stop-color="#6474F8"/>
+      <stop offset="1" stop-color="#9857E8"/>
+    </linearGradient>
+    <linearGradient id="liquidGradient" x1="28" y1="104" x2="116" y2="129" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3475F7"/>
+      <stop offset="0.34" stop-color="#7659EE"/>
+      <stop offset="0.63" stop-color="#BB60DB"/>
+      <stop offset="0.86" stop-color="#DB63C4"/>
+      <stop offset="1" stop-color="#9257E4"/>
+    </linearGradient>
+    <linearGradient id="liquidWarmGradient" x1="76" y1="94" x2="119" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F96E99"/>
+      <stop offset="0.52" stop-color="#FF914F"/>
+      <stop offset="1" stop-color="#FFD16A"/>
+    </linearGradient>
+    <linearGradient id="waveHighlightGradient" x1="32" y1="105" x2="117" y2="111" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DCE8FF" stop-opacity="0.98"/>
+      <stop offset="0.55" stop-color="#F8D4FF" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#FFE9BE" stop-opacity="0.98"/>
+    </linearGradient>
+    <clipPath id="vesselClip" clipPathUnits="userSpaceOnUse">
+      <path d="M63 43 H81 V55 C81 61 84 65 87 69 L119 119 C124 127 120 136 110 136 H34 C24 136 20 127 25 119 L57 69 C60 65 63 61 63 55 Z"/>
+    </clipPath>
+  </defs>
+  <g id="mark" transform="translate(25 47)">
+    <!-- Rear warm phase of the liquid. -->
+    <path id="liquid-warm-phase" d="M62 121 C73 116 79 102 90 95 C101 88 112 98 118 109 C121 115 123 122 124 127 L126 141 H60 Z"
+          fill="url(#liquidWarmGradient)" clip-path="url(#vesselClip)"/>
+    <!-- Main flowing phase. Keep it inset from the vessel stroke. -->
+    <path id="liquid-main-phase" d="M21 114 C32 110 42 94 55 96 C69 98 77 110 89 115 C101 120 112 106 122 106 C124 116 125 125 126 132 L126 141 H21 Z"
+          fill="url(#liquidGradient)" clip-path="url(#vesselClip)"/>
+    <!-- A continuous specular curve makes the liquid read as motion on both themes. -->
+    <path id="liquid-flow-highlight" d="M25 113 C36 107 44 95 55 96 C69 98 78 111 89 115 C101 119 112 106 121 106"
+          stroke="url(#waveHighlightGradient)" stroke-width="1.55" stroke-linecap="round" fill="none" clip-path="url(#vesselClip)"/>
+    <!-- Draw the vessel last so its outline remains clean and uninterrupted. -->
+    <path id="vessel-outline" d="M63 43 V55 C63 61 60 65 57 69 L25 119 C20 127 24 136 34 136 H110 C120 136 124 127 119 119 L87 69 C84 65 81 61 81 55 V43"
+          stroke="url(#lineGradient)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="vessel-rim" d="M59 42.5 H85" stroke="url(#lineGradient)" stroke-width="3.4" stroke-linecap="round"/>
+    <circle cx="75" cy="29" r="8.3" stroke="#4168F6" stroke-width="3"/>
+    <circle cx="94" cy="10" r="3.8" fill="#795FF1"/>
+  </g>
+  <g id="wordmark" fill="#101828">
+    <g id="wordmark-regular"><path d="M52 0H254L398 416H1012L1161 0H1361L813 1490H593ZM456 582 561 884C593 976 639 1118 702 1338C765 1122 809 984 845 884L953 582Z" transform="translate(205.0000 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M338 1490H158V0H338Z" transform="translate(250.4057 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M613 -24C832 -24 1010 95 1070 294L898 343C865 222 763 137 613 137C390 137 287 332 287 552C287 775 390 971 613 971C760 971 860 889 893 774L1066 823C1005 1018 829 1132 613 1132C309 1132 104 902 104 552C104 207 309 -24 613 -24Z" transform="translate(264.9166 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M338 670C338 861 459 970 620 970C776 970 872 867 872 695V0H1053V710C1053 993 900 1132 674 1132C528 1132 411 1073 338 924V1490H158V0H338Z" transform="translate(302.1361 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M471 -26C660 -26 765 73 803 152H815V0H992V737C992 1086 723 1132 573 1132C400 1132 208 1070 122 867L295 810C330 888 417 974 578 974C733 974 812 894 812 755V749C812 666 724 672 525 647C318 621 90 574 90 318C90 98 259 -26 471 -26ZM502 133C368 133 271 193 271 309C271 436 386 478 517 495C586 504 782 524 812 559V404C812 267 701 133 502 133Z" transform="translate(340.7367 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M158 0H338V704C338 882 457 974 588 974C714 974 807 891 807 767V0H987V730C987 871 1079 974 1230 974C1350 974 1456 910 1456 749V0H1636V754C1636 1013 1478 1138 1284 1138C1122 1138 985 1051 932 910C892 1048 794 1138 647 1138C515 1138 389 1064 334 913L333 1118H158Z" transform="translate(377.2823 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M628 -24C857 -24 1024 91 1076 260L902 308C860 194 761 136 629 136C431 136 295 264 286 498H1094V573C1094 986 844 1132 607 1132C302 1132 104 893 104 550C104 206 304 -24 628 -24ZM287 650C298 821 415 972 607 972C791 972 894 840 911 650Z" transform="translate(435.5252 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M338 670C338 861 459 970 620 970C776 970 872 867 872 695V0H1052V710C1052 993 900 1132 674 1132C524 1132 404 1069 332 911L331 1118H158V0H338Z" transform="translate(473.5533 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M598 1118H368V1384H188V1118H20V964H188V276C188 93 302 -14 495 -14C541 -14 592 -7 629 6L592 158C562 152 523 146 500 146C405 146 368 190 368 290V964H598Z" transform="translate(512.1205 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M158 0H338V700C338 851 456 960 617 960C665 960 714 952 725 950V1131C704 1132 660 1134 634 1134C501 1134 385 1059 344 946H332V1118H158Z" transform="translate(532.4942 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/><path d="M140 -405C159 -414 208 -426 272 -426C430 -426 538 -345 606 -167L1097 1118H901L661 455C626 358 600 261 575 168C549 261 524 357 489 455L251 1118H54L481 -6L449 -99C394 -259 315 -283 205 -254L186 -249Z" transform="translate(556.2706 157.0000) scale(0.03369141 -0.03369141)" fill="#101828"/></g>
+    <g id="wordmark-medium"><path d="M665 -25C1015 -25 1217 159 1217 412C1217 681 978 783 788 832L643 870C529 900 375 953 375 1094C375 1220 489 1312 670 1312C839 1312 960 1234 975 1098H1197C1190 1335 981 1510 675 1510C375 1510 147 1339 147 1081C147 877 291 752 535 687L709 639C869 596 992 545 992 415C992 271 853 175 664 175C492 175 348 251 335 414H106C120 142 330 -25 665 -25Z" transform="translate(210.0000 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M786 -20C1172 -20 1457 268 1457 744C1457 1222 1172 1510 786 1510C399 1510 113 1222 113 744C113 268 399 -20 786 -20ZM786 188C530 188 339 384 339 744C339 1105 530 1302 786 1302C1040 1302 1231 1106 1231 744C1231 384 1040 188 786 188Z" transform="translate(229.8280 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M165 0H393V620H1025V815H393V1294H1092V1490H165Z" transform="translate(251.8270 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M90 1294H555V0H784V1294H1247V1490H90Z" transform="translate(270.6354 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M455 0H719L955 883C984 993 1004 1103 1026 1225C1048 1096 1071 983 1097 883L1334 0H1597L2003 1490H1761L1546 636C1515 506 1487 364 1461 223C1433 364 1405 506 1371 636L1152 1490H902L681 636C647 505 618 361 591 217C566 361 538 505 506 636L291 1490H51Z" transform="translate(290.5863 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M51 0H298L431 393H1017L1154 0H1401L861 1490H581ZM496 583 579 829C616 943 662 1098 720 1311C779 1100 824 948 864 829L950 583Z" transform="translate(316.8392 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M165 0H393V563H697C701 563 706 563 710 563L1012 0H1271L943 602C1124 670 1215 822 1215 1022C1215 1297 1044 1490 699 1490H165ZM393 758V1295H673C893 1295 984 1190 984 1022C984 855 893 758 675 758Z" transform="translate(336.6937 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M165 0H1109V196H393V655H1053V850H393V1294H1103V1490H165Z" transform="translate(356.5568 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M165 0H1068V196H393V1490H165Z" transform="translate(388.6103 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M51 0H298L431 393H1017L1154 0H1401L861 1490H581ZM496 583 579 829C616 943 662 1098 720 1311C779 1100 824 948 864 829L950 583Z" transform="translate(406.9882 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/><path d="M165 0H738C1084 0 1241 173 1241 402C1241 631 1080 761 931 769V784C1069 818 1183 913 1183 1099C1183 1319 1030 1490 714 1490H165ZM393 196V669H724C902 669 1015 554 1015 413C1015 289 929 196 715 196ZM393 845V1295H698C875 1295 959 1202 959 1080C959 937 843 845 692 845Z" transform="translate(427.9499 200.0000) scale(0.00878906 -0.00878906)" fill="#64748B"/></g>
+  </g>
+</svg>

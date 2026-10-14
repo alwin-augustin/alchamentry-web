@@ -1,28 +1,20 @@
-/* Alchamentry — progressive enhancement only.
- *
- * The reveal animation is CSS scroll-driven (see site.css), so this file does
- * one thing: give the sticky header a hairline once the page has moved. With
- * JavaScript blocked the page is identical, minus that hairline.
- */
+/* Alchamentry — from the showcase, unchanged apart from being a file rather
+   than an inline block. Progressive enhancement: the page works without it. */
 (function () {
   "use strict";
 
-  var header = document.querySelector(".site-header");
-  if (!header) return;
-
-  var ticking = false;
-
-  function update() {
-    header.classList.toggle("is-scrolled", window.scrollY > 8);
-    ticking = false;
-  }
-
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    window.requestAnimationFrame(update);
-  }
-
-  update();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  const menuButton = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#primary-navigation');
+  menuButton?.addEventListener('click', () => {
+    const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+    nav.classList.toggle('is-open', !isOpen);
+  });
+  nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('is-open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    menuButton?.setAttribute('aria-label', 'Open navigation menu');
+  }));
+  document.querySelector('#year').textContent = new Date().getFullYear();
 })();
