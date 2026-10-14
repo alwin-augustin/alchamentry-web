@@ -14,6 +14,14 @@ changing anything visual.
 
 ![alchamentry.com](docs/preview-hero.png)
 
+### The mark
+
+![The Alchamentry mark](docs/mark.png)
+
+The letter **A**, drawn as a still — the studio's whole job as one object. The full
+reasoning is in [DESIGN.md §7](DESIGN.md); the geometry and why each number is what
+it is live in [`scripts/mark.mjs`](scripts/mark.mjs).
+
 ---
 
 ## How it is put together
