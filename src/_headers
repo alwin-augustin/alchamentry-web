@@ -18,8 +18,9 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
 
-# Hashed CSS/JS and the product icons. The 4-hour platform TTL is fine for the
-# former; must-revalidate keeps the icons from being served stale past it.
+# Hashed CSS/JS, the brand marks, and the icon set. The 4-hour platform TTL is
+# fine for the former; must-revalidate keeps the rest from being served stale
+# past it.
 /assets/*
   Cache-Control: public, max-age=0, must-revalidate
 
