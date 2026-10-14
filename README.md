@@ -46,6 +46,7 @@ src/
   og.png  favicon.svg  favicon.ico  icon-*.png  apple-touch-icon.png
   assets/
     brand/                the supplied marks — design of record, never edited
+      *-header*.svg       generated cropped lockups, see below
     css/site.css          generated from the showcase, then edited by hand
     js/site.js            generated from the showcase
   fonts/                  Inter (variable) + DM Mono, self-hosted, woff2
@@ -53,6 +54,7 @@ scripts/
   build.mjs               src/ -> dist/, with content hashing
   import-showcase.mjs     design/ -> src/  (one-shot, see below)
   icons.mjs               brand icon -> favicon and app-icon plates
+  lockups.mjs             brand lockups -> cropped header lockups
   serve.mjs               tiny static server for local check
 design/
   alchamentry-site-showcase.html   the supplied design, not deployed
@@ -124,14 +126,21 @@ works locally without it, using your own `wrangler login`.
 - **Product facts** are the one thing most likely to go stale. Check them against the
   products themselves.
 
-### Icons
+### Brand assets
 
-`src/assets/brand/alchamentry-icon.svg` is never edited. The plate variants are
-generated from it:
+Nothing in `src/assets/brand/` that came from the designer is edited. Two scripts
+derive the files the site actually uses:
 
 ```sh
-npm run icons      # rewrites src/favicon.svg and src/assets/brand/alchamentry-plate-bleed.svg
+npm run lockups    # -> alchamentry-logo-header{-dark}.svg
+npm run icons      # -> src/favicon.svg, alchamentry-plate-bleed.svg
 ```
+
+`lockups.mjs` crops the header lockup to its artwork and drops the tagline. The
+supplied lockups are 1200×300 canvases where the artwork fills 46 % of the width, so
+`width: 235px` rendered the mark at 107 px and the tagline at 3.5 px — which is why the
+header logo looked blurred. The reasoning is at the top of the script and in
+[DESIGN.md §6](DESIGN.md).
 
 The raster exports are committed and nothing generates them automatically. After
 changing a plate, re-export:

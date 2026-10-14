@@ -161,12 +161,42 @@ and, by extension, as the studio's claim: raw material in, something refined out
 
 | File | Use |
 | --- | --- |
-| `alchamentry-logo-outlined.svg` | Full lockup with wordmark and “SOFTWARE LAB”. Light backgrounds. Used in the header and the share card. |
+| `alchamentry-logo-header.svg` | **Generated.** The header lockup — cropped, no tagline. See below. |
+| `alchamentry-logo-header-dark.svg` | **Generated.** The same, for dark surfaces. |
+| `alchamentry-logo-outlined.svg` | Full lockup with wordmark and “SOFTWARE LAB”. Large placements and print. |
 | `alchamentry-logo-dark-outlined.svg` | The same lockup for dark backgrounds. |
 | `alchamentry-icon.svg` | The flask alone. Hero art, statement card, footer, 404. |
 | `alchamentry-logo-mono.svg` | Single-colour lockup for print and restricted-colour use. |
 | `favicon.svg` | Generated plate: the flask on navy, `36` radius. Opaque, so one file is right on light and dark browser chrome. |
 | `alchamentry-plate-bleed.svg` | Generated: full bleed, mark inside the maskable safe area. |
+
+### Why the header uses a derived lockup
+
+The supplied lockups are drawn on a 1200 × 300 canvas, but the artwork only occupies
+x 46–593, y 53–200 of it — **46 % of the width and 49 % of the height**. Setting
+`width: 235px` sizes the *canvas*, so the mark actually rendered at 107 px, the
+wordmark at 13.5 px, and the “SOFTWARE LAB” line at **3.5 px**. That is the whole of
+the illegible-header problem: it was a viewBox padding issue, not a CSS width issue.
+
+Enlarging the CSS width is not a fix — the tagline is set at 26 % of the wordmark, so
+making it legible would need a ~305 px-wide, 82 px-tall lockup, which is the entire
+header.
+
+`scripts/lockups.mjs` therefore derives a header lockup from each supplied file:
+
+- **the viewBox is cropped to the artwork**, with 2 units of padding, so `width` in
+  CSS now means the width of the mark
+- **the `<g id="wordmark-medium">` group is removed** — the “SOFTWARE LAB” line. It is
+  a lockup detail for large placements, and it survives in the footer, where it is set
+  as real text at a size that can be read.
+
+The supplied files are never modified. They remain the design of record and are still
+the right asset for print and large placements.
+
+Header sizes, all of which keep ~15 px of breathing room in the header: `210px`
+desktop, `170px` under 780 px, `150px` under 430 px. That puts the wordmark at a
+26 px font on desktop — finally bigger than the 13 px nav, which is the hierarchy the
+brand should have.
 
 **The plate is navy, not white.** The liquid gradient runs blue → violet → pink →
 orange and needs a dark ground to read at 16 px; navy is already the design's dark

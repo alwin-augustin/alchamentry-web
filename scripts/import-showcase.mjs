@@ -29,7 +29,10 @@ const SHOWCASE = join(ROOT, "design/alchamentry-site-showcase.html");
 
 /* Which embedded mark is which, by content hash. */
 const EMBEDDED = {
-  "14961b194f2c": { file: "alchamentry-logo-outlined.svg", alt: "Alchamentry" },
+  // The full lockup is 1200x300 of mostly empty canvas with a tagline set at
+  // 26% of the wordmark — illegible at header size. The header uses the derived
+  // cropped lockup instead. See scripts/lockups.mjs.
+  "14961b194f2c": { file: "alchamentry-logo-header.svg", alt: "Alchamentry" },
   b361e913ced2: { file: "alchamentry-icon.svg", alt: "Alchamentry" },
 };
 

@@ -10,6 +10,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "icons": "node scripts/icons.mjs",
+    "lockups": "node scripts/lockups.mjs",
     "import-showcase": "node scripts/import-showcase.mjs",
     "serve": "node scripts/serve.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
