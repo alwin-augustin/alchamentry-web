@@ -12,6 +12,8 @@ index for three products in production:
 The design reasoning lives in **[DESIGN.md](./DESIGN.md)**. Read that before
 changing anything visual.
 
+![alchamentry.com](docs/preview-hero.png)
+
 ---
 
 ## How it is put together
